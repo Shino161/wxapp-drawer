@@ -1,0 +1,76 @@
+page{
+  overflow: hidden;
+}
+.iot-drawer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: z-index 0.5s ease 0.6s;
+}
+
+.iot-drawer-open{
+  transition: z-index 0.1s ease;
+  z-index: 1;
+}
+
+.iot-drawer-sidebar-open{
+  transform: translateX(0%)!important;
+  transition: all 0.5s cubic-bezier(.215,.61,.355,1);
+}
+.iot-drawer-sidebar{
+  position: absolute;
+  width: 70%;
+  background-color: #fff;
+  z-index: 2;
+  transform: translateX(-100%);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s cubic-bezier(.215,.61,.355,1);
+}
+
+.iot-list-body{
+  height: 700px;
+  overflow: auto;
+}
+
+.iot-list-item{
+  font-size: 16px;
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  min-height: 44px;
+  padding-left: 15px;
+  vertical-align: middle;
+  overflow: hidden;
+  align-items: center;
+}
+
+.iot-list-item::after{
+  content: '';
+  display: block;
+  z-index: 1;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+}
+.iot-drawer-overlay-hidden{
+  background-color: rgba(0,0,0,0)!important;
+  transition: all 0.5s cubic-bezier(.215,.61,.355,1);
+}
+.iot-drawer-overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.4);
+  transition: all 0.5s cubic-bezier(.215,.61,.355,1);
+}

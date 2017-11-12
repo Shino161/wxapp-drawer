@@ -1,0 +1,16 @@
+<template name="iot-drawer">
+  <view class="iot-drawer {{iotDrawerOpen ? 'iot-drawer-open':''}}">
+    <view class="iot-drawer-sidebar {{ iotDrawerOpen ? 'iot-drawer-sidebar-open':''}}">
+      <view class="iot-list">
+        <view class="iot-list-body">
+          <block wx:for="{{ pageData }}" >
+            <view class="iot-list-item" >
+              {{item}}
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+    <view class="iot-drawer-overlay {{iotDrawerOpen ? '':'iot-drawer-overlay-hidden'}}" bindtap="closeIotDrawer"></view>
+  </view>
+</template>
