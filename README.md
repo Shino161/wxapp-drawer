@@ -4,6 +4,16 @@
 ## 概述
 基于微信小程序（weapp）开发的抽屉菜单
 
+## 更新日志
+
+
+
+### 0.1
+
+`2017.11.12`
+
+-   更新readme和第一版代码
+
 ## 下载
 ``` bash
 git clone https://github.com/iceOolongTea/iot-drawer.git
