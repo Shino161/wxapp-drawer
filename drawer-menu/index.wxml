@@ -4,7 +4,7 @@
       <view class="iot-list">
         <view class="iot-list-body">
           <block wx:for="{{ pageData }}" >
-            <view class="iot-list-item" >
+            <view class="iot-list-item" id="{{index}}" bindtap="selectItem">
               {{item}}
             </view>
           </block>

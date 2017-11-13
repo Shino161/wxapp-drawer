@@ -37,8 +37,10 @@ git clone https://github.com/iceOolongTea/iot-drawer.git
 var iotDrawer = require('path/to/components/drawer-menu/index.js');
 
 Page(Object.assign({}, iotDrawer, {
+  selectItem: function(event){
+    ...
+  },
   ...
 }));
 
 ~~~
-
