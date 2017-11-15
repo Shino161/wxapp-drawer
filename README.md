@@ -37,7 +37,8 @@ git clone https://github.com/iceOolongTea/iot-drawer.git
 var iotDrawer = require('path/to/components/drawer-menu/index.js');
 
 Page(Object.assign({}, iotDrawer, {
-  selectItem: function(event){
+  //点击菜单项后的回调
+  selectItem: function(event){
     ...
   },
   ...
