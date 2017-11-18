@@ -18,7 +18,11 @@
 ``` bash
 git clone https://github.com/iceOolongTea/iot-drawer.git
 ```
-
+## Api
+   `Method:`
+   openIotDrawer() //打开菜单
+   closeIotDrawer() //关闭菜单
+   
 ## 组件用法
 
 组件样式推荐在`app.wxss`直接引入`path/to/components/drawer-menu/index.wxss`。
@@ -39,7 +43,8 @@ var iotDrawer = require('path/to/components/drawer-menu/index.js');
 Page(Object.assign({}, iotDrawer, {
   //点击菜单项后的回调
   selectItem: function(event){
-    ...
+    ...
+    this.closeIotDrawer()
   },
   ...
 }));
